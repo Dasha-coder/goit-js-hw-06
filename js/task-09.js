@@ -14,6 +14,7 @@ const coloredText = document.querySelector(".color"); */
 refs.btnChangeColor.addEventListener("click", clickChangeColor);
 
 function clickChangeColor(event) {
-  refs.body.style.backgroundColor = `${getRandomHexColor()}`;
-  refs.coloredText.textContent = `${getRandomHexColor()}`;
+  const randomColor = `${getRandomHexColor()}`;
+  refs.body.style.backgroundColor = randomColor;
+  refs.coloredText.textContent = randomColor;
 }
